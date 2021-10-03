@@ -67,7 +67,6 @@ class GeneralFloatCases(unittest.TestCase):
         self.assertRaises(ValueError, float, '\u3053\u3093\u306b\u3061\u306f')
 
     # TODO: RUSTPYTHON
-    @unittest.expectedFailure
     def test_underscores(self):
         for lit in VALID_UNDERSCORE_LITERALS:
             if not any(ch in lit for ch in 'jJxXoObB'):
